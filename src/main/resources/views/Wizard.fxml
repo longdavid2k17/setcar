@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" style="-fx-background-color: #3C3F41;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.WizardController">
+   <top>
+      <HBox alignment="TOP_RIGHT" spacing="5.0" style="-fx-background-color: #393C3E;" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="200.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_minimize_window_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="200.0" onMouseClicked="#maximize" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_maximize_window_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="200.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_multiply_32px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
+   </top>
+   <left>
+      <VBox spacing="40.0" style="-fx-background-color: #393C3E;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fx:id="firstIcon" fitHeight="64.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_1_64px.png" />
+               </image></ImageView>
+            <ImageView fx:id="secondIcon" fitHeight="64.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_2_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="thirdIcon" fitHeight="64.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_3_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fourthIcon" fitHeight="64.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_4_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fifthIcon" fitHeight="64.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_5_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="sixthIcon" fitHeight="64.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_6_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

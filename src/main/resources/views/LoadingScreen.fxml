@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #3C3F41;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoadingScreenController">
+    <children>
+        <StackPane minHeight="-Infinity" prefHeight="534.0" prefWidth="400.0">
+            <children>
+                <Circle fx:id="biggerCircle" fill="#3c3f41" radius="100.0" stroke="#bb0085" strokeType="INSIDE" strokeWidth="7.0" style="-fx-stroke-dash-array: 40;" />
+                <Circle fx:id="smallerCircle" fill="#3c3f41" radius="60.0" stroke="#cbd900" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 30;" />
+                <Label text="SetCar®" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                    <font>
+                        <Font name="Segoe UI Bold" size="50.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="75.0" />
+                    </padding>
+                    <StackPane.margin>
+                        <Insets left="21.0" />
+                    </StackPane.margin>
+                </Label>
+                <Label fx:id="status" text="%Loading" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                    <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="50.0" />
+                    </StackPane.margin>
+                </Label>
+                <ImageView fitHeight="77.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/icons8_car_24px.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="wizardBtn" mnemonicParsing="false" onAction="#runWizard" text="%Run.wizard" textFill="WHITE" visible="false" StackPane.alignment="BOTTOM_RIGHT">
+                    <StackPane.margin>
+                        <Insets bottom="25.0" right="50.0" />
+                    </StackPane.margin>
+                </Button>
+            <Button fx:id="dbBtn" mnemonicParsing="false" onAction="#runSearchEngine" text="%Run.db" textFill="WHITE" visible="false" StackPane.alignment="BOTTOM_LEFT">
+               <StackPane.margin>
+                  <Insets bottom="25.0" left="50.0" />
+               </StackPane.margin>
+            </Button>
+            </children>
+        </StackPane>
+    </children>
+</HBox>

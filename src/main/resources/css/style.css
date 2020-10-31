@@ -1,0 +1,27 @@
+.imageButton
+{
+    -fx-transition-property: width,height,z-index;
+    -fx-transition-duration: 5s;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-scale-z: 1.0;
+}
+
+.imageButton:hover
+{
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+.button
+{
+    -fx-background-radius: 2em;
+    -fx-max-height: 35px;
+    -fx-background-color: #000000;
+}
+.button:hover
+{
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
