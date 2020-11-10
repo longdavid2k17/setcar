@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1258.0" style="-fx-background-color: #3C3F41;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FourthStepController">
+   <children>
+      <Button layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../css/style.css" text="%wizard.back" textFill="WHITE" AnchorPane.bottomAnchor="47.0">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="900.0" layoutY="500.0" mnemonicParsing="false" onAction="#goNext" stylesheets="@../css/style.css" text="%wizard.forward" textFill="WHITE" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="228.0">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

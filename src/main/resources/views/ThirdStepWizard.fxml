@@ -1,11 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="576.0" prefWidth="1258.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ThirdStepController">
+<AnchorPane prefHeight="576.0" prefWidth="1258.0" style="-fx-background-color: #3C3F41;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ThirdStepController">
    <children>
-      <Button layoutX="400.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#showSecond" text="Pokaż drugi" />
-      <Button layoutX="687.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#showFirst" text="Pokaż pierwszy" />
+      <ImageView fitHeight="345.0" fitWidth="600.0" layoutX="1052.0" layoutY="425.0" opacity="0.05" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.742279052734375">
+         <image>
+            <Image url="@../icon/carselect.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="900.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#showNext" stylesheets="@../css/style.css" text="%wizard.forward" textFill="WHITE" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="228.0">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></Button>
+      <Button layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#goBack" stylesheets="@../css/style.css" text="%wizard.back" textFill="WHITE" AnchorPane.bottomAnchor="47.0">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="90.0" layoutY="43.0" text="%wizard.thirddstep.mainLabel" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="90.0" text="%wizard.thirdstep.firstQuestion" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="129.0" text="%wizard.thirdstep.firstquestion.firstlabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="531.0" layoutY="129.0" text="%wizard.thirdstep.firstquestion.secondlabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="899.0" layoutY="128.0" text="%wizard.thirdstep.firstquestion.thirdlabel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <RadioButton fx:id="answer1Btn" layoutX="168.0" layoutY="198.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.firstanswer" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="answer2Btn" layoutX="533.0" layoutY="198.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.secondanswer" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="answer3Btn" layoutX="901.0" layoutY="198.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.thirdanswer" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </RadioButton>
+      <Line endX="990.0" layoutX="174.0" layoutY="260.0" startX="-100.0" stroke="WHITE" />
+      <Label layoutX="90.0" layoutY="290.0" text="%wizard.thirdstep.secondQuestion" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="answer4Btn" layoutX="486.0" layoutY="448.0" mnemonicParsing="false" text="%wizard.thirdstep.sixthLabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="fromField" layoutX="271.0" layoutY="391.0" />
+      <TextField fx:id="toField" layoutX="826.0" layoutY="391.0" />
+      <Label layoutX="269.0" layoutY="352.0" text="%wizard.thirdstep.fourthLabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="826.0" layoutY="352.0" text="%wizard.thirdstep.fifthLabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
