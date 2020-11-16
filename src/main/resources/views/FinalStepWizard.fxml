@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1258.0" style="-fx-background-color: #3C3F41;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FinalStepController">
+   <children>
+      <Button layoutX="150.0" layoutY="500.0" mnemonicParsing="false" onAction="#restart" stylesheets="@../css/style.css" text="%wizard.restart" textFill="WHITE" AnchorPane.bottomAnchor="47.0">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="90.0" layoutY="43.0" text="%wizard.results.mainLabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="90.0" layoutY="98.0" prefHeight="20.0" prefWidth="1050.0" spacing="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <Label text="%wizard.results.producer" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label text="%wizard.results.modelName" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label text="%wizard.results.generation" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label text="%wizard.results.carType" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label text="%wizard.results.warranty" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label text="%wizard.results.minimalPrice" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label text="%wizard.result.preview" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="90.0" layoutY="140.0" style="-fx-background-color: #3C3F41;" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="140.0">
+         <content>
+            <VBox fx:id="pnItems" alignment="CENTER" spacing="20.0" style="-fx-background-color: #3C3F41;">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

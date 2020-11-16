@@ -24,7 +24,7 @@
       </Button>
       <Label layoutX="90.0" layoutY="43.0" text="%wizard.thirddstep.mainLabel" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="40.0">
          <font>
-            <Font name="Segoe UI" size="25.0" />
+            <Font name="Segoe UI Bold" size="25.0" />
          </font>
       </Label>
       <Label layoutX="90.0" layoutY="90.0" text="%wizard.thirdstep.firstQuestion" textFill="WHITE">
@@ -32,29 +32,29 @@
             <Font name="Segoe UI" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="153.0" layoutY="129.0" text="%wizard.thirdstep.firstquestion.firstlabel" textFill="WHITE">
+      <Label layoutX="133.0" layoutY="129.0" text="%wizard.thirdstep.firstquestion.firstlabel" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="15.0" />
          </font></Label>
-      <Label layoutX="531.0" layoutY="129.0" text="%wizard.thirdstep.firstquestion.secondlabel" textFill="WHITE">
+      <Label layoutX="466.0" layoutY="129.0" text="%wizard.thirdstep.firstquestion.secondlabel" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="15.0" />
          </font></Label>
-      <Label layoutX="899.0" layoutY="128.0" text="%wizard.thirdstep.firstquestion.thirdlabel" textFill="WHITE">
+      <Label layoutX="814.0" layoutY="128.0" text="%wizard.thirdstep.firstquestion.thirdlabel" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
-      <RadioButton fx:id="answer1Btn" layoutX="168.0" layoutY="198.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.firstanswer" textFill="WHITE">
+      <RadioButton fx:id="answer1Btn" layoutX="133.0" layoutY="218.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.firstanswer" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="answer2Btn" layoutX="533.0" layoutY="198.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.secondanswer" textFill="WHITE">
+      <RadioButton fx:id="answer2Btn" layoutX="466.0" layoutY="218.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.secondanswer" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="answer3Btn" layoutX="901.0" layoutY="198.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.thirdanswer" textFill="WHITE">
+      <RadioButton fx:id="answer3Btn" layoutX="814.0" layoutY="218.0" mnemonicParsing="false" text="%wizard.thirdstep.firstquestion.thirdanswer" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
@@ -65,7 +65,7 @@
             <Font name="Segoe UI" size="15.0" />
          </font>
       </Label>
-      <RadioButton fx:id="answer4Btn" layoutX="486.0" layoutY="448.0" mnemonicParsing="false" text="%wizard.thirdstep.sixthLabel" textFill="WHITE">
+      <RadioButton fx:id="answer4Btn" layoutX="550.0" layoutY="448.0" mnemonicParsing="false" text="%wizard.thirdstep.sixthLabel" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>

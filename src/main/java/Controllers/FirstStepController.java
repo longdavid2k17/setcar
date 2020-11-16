@@ -15,11 +15,15 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class FirstStepController implements Initializable
 {
+    // TODO walidacja odpowiedzi i przekazanie listy
+    private List<String> wizardAnswersList;
+
     @FXML
     private RadioButton yesRadioBtn,noRadioBtn;
 
@@ -42,8 +46,42 @@ public class FirstStepController implements Initializable
     final ToggleGroup firstGroup = new ToggleGroup();
     final ToggleGroup secondGroup = new ToggleGroup();
 
+    public List<String> getWizardAnswersList()
+    {
+        return wizardAnswersList;
+    }
+
+    public void setWizardAnswersList(List<String> wizardAnswersList)
+    {
+        this.wizardAnswersList = wizardAnswersList;
+    }
+
+    public void init()
+    {
+        wizardController.getFirstIcon().setOpacity(1.0);
+        wizardController.getSecondIcon().setOpacity(0.5);
+        wizardController.getThirdIcon().setOpacity(0.5);
+        wizardController.getFourthIcon().setOpacity(0.5);
+        wizardController.getFifthIcon().setOpacity(0.5);
+        wizardController.getSixthIcon().setOpacity(0.5);
+    }
+
+    public void setAnswers()
+    {
+        // TODO tutaj ustawiamy odpowiedzi z listy przekazanej wcześniej seterem, z widoków późniejszych przy cofaniu się
+        if(getWizardAnswersList().get(0)=="Yes")
+        {
+
+        }
+        else
+        {
+
+        }
+    }
+
     public void showSecondStep(MouseEvent mouseEvent)
     {
+        // TODO zapisywanie odpowiedzi do listy i przekazanie jej w inicie do drugiego kontrolera
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("views/SecondStepWizard.fxml"),resources);
         try
         {
@@ -169,4 +207,6 @@ public class FirstStepController implements Initializable
         bigCarImage.setOpacity(0.5);
         sportCarImage.setOpacity(0.5);
     }
+
+
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1258.0" style="-fx-background-color: #3C3F41;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FifthStepController">
+   <children>
+      <Button layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../css/style.css" text="%wizard.back" textFill="WHITE" AnchorPane.bottomAnchor="47.0">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="900.0" layoutY="500.0" mnemonicParsing="false" onAction="#goNext" stylesheets="@../css/style.css" text="%wizard.showResult" textFill="WHITE" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="228.0">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></Button>
+      <Label layoutX="90.0" layoutY="43.0" text="%wizard.fifthstep.mainLabel" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="117.0" prefHeight="190.0" prefWidth="658.0" text="%wizard.fifthstep.description" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="310.0" layoutY="347.0" promptText="%wizard.fourthstep.secondway.from" />
+      <TextField layoutX="727.0" layoutY="347.0" promptText="%wizard.fourthstep.secondway.to" />
+   </children>
+</AnchorPane>

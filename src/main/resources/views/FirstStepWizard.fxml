@@ -13,17 +13,17 @@
             <Image url="@../icon/carselect.png" />
          </image>
       </ImageView>
-      <Button layoutX="900.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#showSecondStep" stylesheets="@../css/style.css" text="%wizard.forward" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="230.0">
+      <Button layoutX="900.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#showSecondStep" stylesheets="@../css/style.css" text="%wizard.forward" textFill="WHITE" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="230.0">
          <font>
             <Font name="Segoe UI" size="15.0" />
          </font></Button>
-      <Button layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onAction="#clear" stylesheets="@../css/style.css" text="%wizard.clear" textFill="WHITE" AnchorPane.bottomAnchor="50.0">
+      <Button layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onAction="#clear" stylesheets="@../css/style.css" text="%wizard.clear" textFill="WHITE" AnchorPane.bottomAnchor="47.0">
          <font>
             <Font name="Segoe UI" size="15.0" />
          </font></Button>
       <Label layoutX="90.0" layoutY="43.0" text="%wizard.firststep.mainLabel" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="40.0">
          <font>
-            <Font name="Segoe UI" size="25.0" />
+            <Font name="Segoe UI Bold" size="25.0" />
          </font>
       </Label>
       <Label layoutX="90.0" layoutY="89.0" text="%wizard.firststep.firstQuestion" textFill="WHITE">
